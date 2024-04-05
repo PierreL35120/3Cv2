@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+
+body{
+    overflow-x: hidden;
+    border: #476e9e 5px solid;
+    background-color: #488CAC;
+}
+
+.phrase{
+    width: 96vw;
+    transform: translateX(-50%);
+    margin-left: 50vw;
+    margin-top: 5vh;
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #ffffff;
+}    .select select {
+        font-family: 'Arial';
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px 12px;
+        outline: 0;
+        border: 0px solid #000000;
+        border-radius: 8px;
+        background: #484AAD;
+        color: #ffffff;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        margin-bottom: 4px;
+
+    }
+        .select select::-ms-expand {
+            display: none;
+        }
+        .select select:hover,
+        .select select:focus {
+            background: #484AAD;
+        }
+        .select select:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-top-color: #000000;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #cccccc;
+}
+
+.bloom{
+    background-color: transparent;
+}
+
+optgroup{
+    color: #000000;
+}
+
+.bloomun{
+    background-color: #35A9CA;
+}
+
+.bloomdeux{
+    background-color: #4787C2;
+}
+
+.bloomtrois{
+    background-color: #866EA9;
+}
+
+.bloomquatres{
+    background-color: #99B44F;
+}
+
+.bloomcinq{
+    background-color: #F59B39;
+}
+
+.bloomsix{
+    background-color: #D05D47;
+}
+
+.supportvisuel{
+    background-color: #bb4430;
+}
+
+.supportoral{
+    background-color: #7ebdc2;
+}
+
+.supportmedia{
+    background-color: #f3dfa2;
+}
+
+.supportecrit{
+    background-color: #ff8811;
+}
+
+#resultat, #resultatText{
+    margin-top: 2vh;
+    font-size: 20px;
+    color:white;
+}
+
+.bloomy{
+    text-transform: lowercase;
+}
+
+.generer {
+    margin-top: 1vh;
+    margin-left: 45vw;
+    transform: translateX(-50%);
+	box-shadow: 3px 4px 5px 2px #1a1a1a;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+    color: #ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:4px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.generer:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.generer:active {
+	position:relative;
+	top:1px;
+}
+
+.css-input {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 0px;
+    border-color: #d7d7d7;
+    background-color: #484AAD;
+    color: #ffffff;
+    border-style: solid;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px rgba(255,255,255,.75);
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+}
+
+.css-input::-webkit-input-placeholder{
+    color: white;
+}
+
+.css-input:focus {
+    outline:none;
+}
+
+.back {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #484AAD 100%, #488CAC 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:8px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.back:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.back:active {
+	position:relative;
+	top:1px;
+}
+
+.zoneback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.transition{
+    display: flex;
+    height: 30vh;
+    justify-content:center
+}
+
+.transition img{
+    height: 100%;
+}

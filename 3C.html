@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <title>Les 3C</title>
+</head>
+<body>
+    <div class="zoneback">
+        <a href="index.html" class="back">Retour</a>
+    </div>    
+    <div class="phrase select">
+    <span>A la fin</span> 
+    <select onchange="genererPhrase()" id="format">
+        <option>de l'atelier</option>
+        <option>de la séquence</option>
+        <option>du module</option>
+    </select>
+      <span> l'apprenant sera capable</span>
+      <select onchange="genererPhrase()" id="pronom">
+        <option>de </option>
+        <option>d'</option>
+      </select>
+      
+      <select onchange="genererPhrase()" class="bloom" id="bloomy">
+        <option>Verbe d'action</option>
+        <optgroup label="Niveau 1 - APPRENDRE" class="bloomun">
+        <option>Acquérir</option>
+        <option>Arranger</option>
+        <option>Associer</option>
+        <option>Assortir</option>
+        <option>Choisir</option>
+        <option>Citer</option>
+        <option>Cocher</option>
+        <option>Copier</option>
+        <option>Couper</option>
+        <option>Décrire</option>
+        <option>Définir</option>
+        <option>Désigner</option>
+        <option>Dire</option>
+        <option>Dupliquer</option>
+        <option>Écrire</option>
+        <option>Encercler</option>
+        <option>Énoncer</option>
+        <option>Enregistrer</option>
+        <option>Énumérer</option>
+        <option>Épeler</option>
+        <option>Esquisser</option>
+        <option>Étiqueter</option>
+        <option>Exclure</option>
+        <option>Identifier</option>
+        <option>Indiquer</option>
+        <option>Inscrire</option>
+        <option>Insérer</option>
+        <option>Inventorier</option>
+        <option>Lister</option>
+        <option>Localiser</option>
+        <option>Marquer</option>
+        <option>Montrer</option>
+        <option>Nommer</option>
+        <option>Noter</option>
+        <option>Observer</option>
+        <option>Ordonner</option>
+        <option>Placer</option>
+        <option>Rappeler</option>
+        <option>Réciter</option>
+        <option>Reconnaître</option>
+        <option>Regrouper</option>
+        <option>Répéter</option>
+        <option>Reproduire</option>
+        <option>Se rappeler</option>
+        <option>Sélectionner</option>
+        <option>Situer</option>
+        <option>Souligner</option>
+        <option>Trouver</option>
+    </optgroup>
+
+    <optgroup label="Niveau 2 - COMPRENDRE" class="bloomdeux">
+        <option>Associer</option>
+        <option>Calculer</option>
+        <option>Changer</option>
+        <option>Citer</option>
+        <option>Classer</option>
+        <option>Comparer</option>
+        <option>Construire</option>
+        <option>Convertir</option>
+        <option>Définir</option>
+        <option>Démontrer</option>
+        <option>Déterminer</option>
+        <option>Différencier</option>
+        <option>Dire en ses mots</option>
+        <option>Distinguer</option>
+        <option>Donner un exemple</option>
+        <option>Élargir</option>
+        <option>Estimer</option>
+        <option>Expliquer</option>
+        <option>Exprimer</option>
+        <option>Formuler</option>
+        <option>Généraliser</option>
+        <option>Illustrer</option>
+        <option>Interpréter</option>
+        <option>Manifester</option>
+        <option>Paraphraser</option>
+        <option>Préciser</option>
+        <option>Prédire</option>
+        <option>Présenter</option>
+        <option>Prolonger</option>
+        <option>Rassembler</option>
+        <option>Réarranger</option>
+        <option>Reconnaître</option>
+        <option>Redire</option>
+        <option>Réécrire</option>
+        <option>Reformuler</option>
+        <option>Regrouper</option>
+        <option>Reprendre</option>
+        <option>Représenter</option>
+        <option>Résumer</option>
+        <option>Suivre</option>
+        <option>Traduire</option>
+        <option>Transformer</option>
+    </optgroup>
+
+    <optgroup label="Niveau 3 - APPLIQUER" class="bloomtrois">
+        <option></option>
+        <option>Accomplir</option>
+        <option>Administrer</option>
+        <option>Appliquer</option>
+        <option>Calculer</option>
+        <option>Choisir</option>
+        <option>Classifier</option>
+        <option>Collaborer</option>
+        <option>Collectionner</option>
+        <option>Communiquer</option>
+        <option>Compléter</option>
+        <option>Construire</option>
+        <option>Consulter</option>
+        <option>Contraster</option>
+        <option>Contrôler</option>
+        <option>Convaincre</option>
+        <option>Coordonner</option>
+        <option>Découvrir</option>
+        <option>Décrire</option>
+        <option>Démontrer</option>
+        <option>Dessiner</option>
+        <option>Déterminer</option>
+        <option>Développer</option>
+        <option>Discuter</option>
+        <option>Employer</option>
+        <option>Enregistrer</option>
+        <option>Exécuter</option>
+        <option>Expérimenter</option>
+        <option>Exposer</option>
+        <option>Faire preuve</option>
+        <option>Formuler</option>
+        <option>Gérer</option>
+        <option>Illustrer</option>
+        <option>Implanter</option>
+        <option>Informer</option>
+        <option>Interpréter</option>
+        <option>Interviewer</option>
+        <option>Jouer</option>
+        <option>Manipuler</option>
+        <option>Mesurer</option>
+        <option>Mettre en oeuvre</option>
+        <option>Mettre en place</option>
+        <option>Mettre en pratique</option>
+        <option>Modeler</option>
+        <option>Modifier</option>
+        <option>Montrer</option>
+        <option>Opérer</option>
+        <option>Organise</option>
+        <option>Partager</option>
+        <option>Participer</option>
+        <option>Pratiquer</option>
+        <option>Préciser</option>
+        <option>Préparer</option>
+        <option>Préserver</option>
+        <option>Produire</option>
+        <option>Recommander</option>
+        <option>Relier</option>
+        <option>Reporter</option>
+        <option>Représenter</option>
+        <option>Résoudre</option>
+        <option>Restructurer</option>
+        <option>Sélectionner</option>
+        <option>Situer</option>
+        <option>Spécifier</option>
+        <option>Traiter</option>
+        <option>Transférer</option>
+        <option>Utiliser</option>
+        <option>Vulgariser</option>
+    </optgroup>
+
+    <optgroup label="Niveau 4 - ANALYSER" class="bloomquatres">
+        <option></option>
+        <option>Associer</option>
+        <option>Attribuer</option>
+        <option>Catégoriser</option>
+        <option>Chercher</option>
+        <option>Choisir</option>
+        <option>Cibler</option>
+        <option>Clarifier</option>
+        <option>Classer</option>
+        <option>Classifier</option>
+        <option>Commander</option>
+        <option>Comparer</option>
+        <option>Compiler</option>
+        <option>Contraster</option>
+        <option>Coordonner</option>
+        <option>Critiquer</option>
+        <option>Déceler</option>
+        <option>Décomposer</option>
+        <option>Découper</option>
+        <option>Découvrir</option>
+        <option>Déduire</option>
+        <option>Délimiter</option>
+        <option>Dessiner</option>
+        <option>Détecter</option>
+        <option>Différencier*</option>
+        <option>Discerner</option>
+        <option>Discriminer</option>
+        <option>Disséquer</option>
+        <option>Distinguer</option>
+        <option>Diviser</option>
+        <option>Effectuer</option>
+        <option>Examiner</option>
+        <option>Expérimenter</option>
+        <option>Expliquer</option>
+        <option>Extraire</option>
+        <option>Faire ressortir</option>
+        <option>Faire un sondage</option>
+        <option>Faire une recherche</option>
+        <option>Illustrer</option>
+        <option>Inspecter</option>
+        <option>Inventorier</option>
+        <option>Investiguer</option>
+        <option>Limiter</option>
+        <option>Mettre en ordre d’importance</option>
+        <option>Morceler</option>
+        <option>Organiser</option>
+        <option>Pallier</option>
+        <option>Prendre parti</option>
+        <option>Privilégier</option>
+        <option>Questionner</option>
+        <option>Réaliser</option>
+        <option>Rechercher</option>
+        <option>Reconnaître* (admettre)</option>
+        <option>Recueillir</option>
+        <option>Respecter</option>
+        <option>Sélectionner</option>
+        <option>Séparer</option>
+        <option>Simplifier</option>
+        <option>Subdiviser</option>
+        <option>Tester</option>
+        <option>Trier</option>
+        <option>Veiller</option>
+        <option>Vérifier</option>
+    </optgroup>
+
+    <optgroup label="Niveau 5 - EVALUER" class="bloomcinq">
+        <option></option>
+        <option>Anticiper</option>
+        <option>Apprécier</option>
+        <option>Appuyer</option>
+        <option>Argumenter</option>
+        <option>Attribuer</option>
+        <option>Censurer</option>
+        <option>Comparer</option>
+        <option>Conclure</option>
+        <option>Considérer</option>
+        <option>Corriger</option>
+        <option>Critiquer</option>
+        <option>Débattre</option>
+        <option>Décerner</option>
+        <option>Décider</option>
+        <option>Défendre</option>
+        <option>Dégager</option>
+        <option>Déterminer</option>
+        <option>Diagnostiquer</option>
+        <option>Discuter</option>
+        <option>Donner une note</option>
+        <option>Estimer</option>
+        <option>Expliquer</option>
+        <option>Expose</option>
+        <option>Évaluer</option>
+        <option>Formuler</option>
+        <option>Gérer</option>
+        <option>Interpréter</option>
+        <option>Juger (à l’aide de critères)</option>
+        <option>Justifier</option>
+        <option>Maîtriser</option>
+        <option>Mesurer</option>
+        <option>Négocier</option>
+        <option>Optimiser</option>
+        <option>Orienter</option>
+        <option>Préciser*</option>
+        <option>Prédire*</option>
+        <option>Présenter*</option>
+        <option>Prévoir</option>
+        <option>Prioriser</option>
+        <option>Recommander</option>
+        <option>Relater</option>
+        <option>Remplacer</option>
+        <option>Résumer</option>
+        <option>Réviser</option>
+        <option>Situer</option>
+        <option>Soutenir</option>
+        <option>Spécifier</option>
+        <option>Structurer</option>
+        <option>Synthétiser</option>
+        <option>Valider</option>
+    </optgroup>
+
+    <optgroup label="Niveau 6 - CREER" class="bloomsix">
+        <option></option>
+        <option>Animer</option>
+        <option>Bâtir</option>
+        <option>Collaborer</option>
+        <option>Combiner</option>
+        <option>Composer</option>
+        <option>Concevoir</option>
+        <option>Confectionner</option>
+        <option>Constituer</option>
+        <option>Construire</option>
+        <option>Coordonner</option>
+        <option>Créer</option>
+        <option>Dessiner</option>
+        <option>Développer</option>
+        <option>Élaborer</option>
+        <option>Établir</option>
+        <option>Fabriquer</option>
+        <option>Façonner</option>
+        <option>Former</option>
+        <option>Fusionner</option>
+        <option>Générer</option>
+        <option>Intégrer</option>
+        <option>Inventer</option>
+        <option>Négocier</option>
+        <option>Organiser</option>
+        <option>Planifier</option>
+        <option>Produire</option>
+        <option>Proposer</option>
+        <option>Rédiger</option>
+        <option>Schématiser</option>
+        <option>Soumettre</option>
+        <option>Synthétiser</option>
+    </optgroup>
+      </select>
+
+    <select onchange="genererPhrase()" id="support">   
+        <option>Contenu</option>
+        <option></option>
+    <optgroup label="Support visuel" class="supportvisuel">         
+        <option>un graphique</option>
+        <option>un dessin</option>
+        <option>une chronologie</option>
+        <option>une carte</option>
+        <option>une carte mentale</option>
+        <option>une affiche</option>
+    </optgroup>
+
+    <optgroup label="Retour oral" class="supportoral">
+        <option>un débat</option>
+        <option>une table ronde</option>
+        <option>un cours</option>
+        <option>une critique</option>
+        <option>un pécha-kucha</option>
+    </optgroup>
+
+    <optgroup label="Support Multimédia" class="supportmedia">        
+        <option>une vidéo</option>
+        <option>une présentation</option>
+        <option>un journal</option>
+        <option>un reportage photo</option>
+        <option>une page web</option>
+        <option>un podcast</option>
+    </optgroup>
+
+    <optgroup label="Support écrit" class="supportecrit">        
+        <option>un article</option>
+        <option>un essai</option>
+        <option>une lettre</option>
+        <option>un poème</option>
+        <option>une chanson</option>
+        <option>une histoire</option>
+    </optgroup>
+
+    <optgroup label="Logiciel" class="supportecrit">        
+        <option>une interface</option>
+        <option>un menu</option>
+    </optgroup>
+    </select>
+
+    <input onchange="genererPhrase()" class="css-input" placeholder="Sujet" id="inputun"></input>    
+    
+    <select onchange="genererPhrase()" id="aide">
+        <option>Aide utilisée</option>
+        <option></option>
+        <option>avec l'aide de son cours</option>
+        <option>avec l'aide de son formateur</option>
+        <option>avec l'aide de ses collégues</option>
+        <option>avec l'aide d'internet</option>
+        <option>avec l'aide de Wikipédia</option>
+        <option>avec l'aide de journaux ou revues</option>
+        <option>avec l'aide de livres</option>
+        <option>avec l'aide d'experts</option>
+        <option>avec l'aide du médiateur numérique</option>
+        <option>avec l'aide des médiateurs numériques</option>
+    </select>
+    
+    <span>en</span>
+    
+    <select onchange="genererPhrase()" id="dureeh">
+        <option>Durée</option>
+        <option></option>
+        <option>1h</option>
+        <option>2h</option>
+        <option>3h</option>
+     </select>   
+
+    <select onchange="genererPhrase()" id="dureem">
+        <option>Durée</option>
+        <option></option>
+        <option>15m</option>
+        <option>30m</option>
+        <option>45m</option>
+    </select>   
+
+     <span>et en</span>
+
+    <select onchange="genererPhrase()" id="groupe">
+     <option>autonomie</option>
+     <option>duo</option>
+     <option>groupe</option>
+    </select>
+
+<p id="resultat">A la fin de l'atelier l'apprenant sera capable de Verbe d'action Contenu Sujet Aide utilisée en DuréeDurée et en autonomie.</p>
+
+<div class="transition">
+    <img src="./logo.png">
+</div>
+
+<span>A la fin de</span>
+<input onchange="genererPhraseText()" class="css-input" placeholder="Format" id="FormatText"></input>
+<span>l'apprenant sera capable de</span>    
+<input onchange="genererPhraseText()" class="css-input" placeholder="Verbe d'action" id="VerbeText"></input>    
+<input onchange="genererPhraseText()" class="css-input" placeholder="Contenue" id="ContenueText"></input>    
+<input onchange="genererPhraseText()" class="css-input" placeholder="Sujet" id="SujetText"></input>  
+<input onchange="genererPhraseText()" class="css-input" placeholder="Aide" id="AideText"></input>    
+<input onchange="genererPhraseText()" class="css-input" placeholder="Temps" id="TempsText"></input>    
+<span>Et en</span>
+<input onchange="genererPhraseText()" class="css-input" placeholder="Seul ou Groupe ?" id="GroupeText"></input>    
+
+<p id="resultatText">A la fin de l'atelier l'apprenant sera capable de Verbe d'action Contenu Sujet Aide utilisée en DuréeDurée et en autonomie.</p>
+</div>
+
+<script>
+     function genererPhrase() {
+      var format = document.getElementById("format").value;
+      var pronom = document.getElementById("pronom").value;
+      var bloom = document.getElementById("bloomy").value;
+      var support = document.getElementById("support").value;
+      var inputun = document.getElementById("inputun").value;
+      var aide = document.getElementById("aide").value;
+      var dureeh = document.getElementById("dureeh").value;
+      var dureem = document.getElementById("dureem").value;
+      var groupe = document.getElementById("groupe").value;
+      
+      var phrase = "A la fin " + format + " " + "l'apprenant sera capable " + pronom + `<span class="bloomy">` + bloom + "</span>"  + " " + support + " " +  inputun + " " + aide + " en " + dureeh + dureem + " et en " + groupe + ".";
+      
+      document.getElementById("resultat").innerHTML = phrase;
+    }
+
+    function genererPhraseText() {
+      var FormatText = document.getElementById("FormatText").value;
+      var VerbeText = document.getElementById("VerbeText").value;
+      var ContenueText = document.getElementById("ContenueText").value;
+      var SujetText = document.getElementById("SujetText").value;
+      var AideText = document.getElementById("AideText").value;
+      var TempsText = document.getElementById("TempsText").value;
+      var GroupeText = document.getElementById("GroupeText").value;
+      var dureem = document.getElementById("dureem").value;
+      var groupe = document.getElementById("groupe").value;
+      
+      var phrase = "A la fin " + FormatText + " " + "l'apprenant sera capable " + VerbeText + ContenueText + " " + SujetText + " " +  AideText + " " + TempsText + " en " + GroupeText + ".";
+      
+      document.getElementById("resultatText").innerHTML = phrase;
+    }
+</script>
+</body>
+</html>
